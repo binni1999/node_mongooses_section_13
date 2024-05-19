@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   User.findById('6649ea3df1aa32a4e58db468')
     .then(user => {
 
-      console.log(user);
+      //console.log(user);
 
       req.user = user
       next();

@@ -78,6 +78,7 @@ exports.postEditProduct = async (req, res, next) => {
 exports.getProducts = async (req, res, next) => {
   try {
     const products = await Product.find()
+    // .populate('userId')
     console.log(products);
 
     res.render('admin/products', {
